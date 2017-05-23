@@ -17,22 +17,22 @@ source `dirname $0`/utils.sh
 # fi
 
 brews=(
-    zsh
-    ruby
-    python
-    node
-    git
-    mongodb
-    elasticsearch
-    redis
-    libmemcached
+  zsh
+  ruby
+  python
+  node
+  git
+  mongodb
+  elasticsearch
+  redis
+  libmemcached
 )
 casks=(
-    iterm2
-    p4merge
-    postman
-    robomongo
-    docker
+  iterm2
+  p4merge
+  postman
+  robomongo
+  docker
 )
 # Create Developer folder
 create_dev_directory(){
