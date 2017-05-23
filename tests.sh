@@ -17,15 +17,15 @@ test(){
 }
 
 assert_true(){
-    if [ $? -eq 0 ]; then
-        printf "${green}✔ %s function passed${normal}\n" "$1"
-        ((passed++))
-        return 0
-    else
-        printf "${red}✖ %s function failed${normal}\n" "$1"
-        ((failed++))
-        return 1
-    fi
+  if [ $? -eq 0 ]; then
+    printf "${green}✔ %s function passed${normal}\n" "$1"
+    ((passed++))
+    return 0
+  else
+    printf "${red}✖ %s function failed${normal}\n" "$1"
+    ((failed++))
+    return 1
+  fi
 }
 
 test message_s "Test"
@@ -37,6 +37,3 @@ test create_dev_directory
 printf "Tests ran: $tests\n"
 printf "Passed: $passed\n"
 printf "Failed: $failed\n"
-
-
-
